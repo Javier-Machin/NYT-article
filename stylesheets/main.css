@@ -7,7 +7,6 @@ html, body {
 
 .main_container {
   width: 65%;
-  height: 100%;
   margin: 100px auto;
 }
 
@@ -27,7 +26,7 @@ html, body {
   top: 7px;
   display: inline-block;
   float: left;
-  margin-left: 8%;
+  margin-left: 7%;
   font-weight: 1000;
   font-size: 14px;
 }
@@ -85,10 +84,9 @@ header {
   grid-area: left;
   margin-left: 35%;
   font-size: 19px;
-  line-height: 25px;
+  line-height: 26px;
   width: 75%;
 }
-
 
 .article-img {
   width: 100%;
@@ -133,14 +131,14 @@ aside img {
 .theory-inflation {
   background-image: url("../images/theory.png");
   background-size: 98% 540px;
-  background-position: 0 80px;
+  background-position: 0 70px;
   background-repeat: no-repeat;
   display: grid;
   grid-template: 
             "a a a a" 50px
             "b c d e" 260px
             "f g h i" 260px / 1fr 1fr 1fr 1fr;
-  height: 650px;
+  height: 620px;
   min-width: 600px;
   grid-column-gap: 5px;
   width: 80%;
@@ -208,4 +206,59 @@ aside img {
 .article-inner-img img {
   max-width: 100%;
   margin: 0;
+}
+
+footer {
+  border-top: 3px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 10px 0 10px 0;
+  display: grid;
+  grid-template: 
+            "z z z z z z" 
+            "a b c d e f";
+  width: 65%;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  text-align: left;
+  grid-area: z;
+}
+
+.footer-column-a {
+  grid-area: a;
+}
+
+.footer-column-b {
+  grid-area: b;
+}
+
+.footer-column-c {
+  grid-area: c;
+}
+
+.footer-column-d {
+  grid-area: d;
+}
+
+.footer-column-e {
+  grid-area: e;
+}
+
+.footer-column-f {
+  padding-left: 10px; 
+  border-left: 1px solid rgba(0,0,0,0.1);
+  grid-area: f;
+}
+
+.footer-item {
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  line-height: 25px;
+  min-width: 170px;
 }
