@@ -78,6 +78,7 @@ header {
   display:grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "left right";
+  min-width: 800px;
 }
 
 .article-body p {
@@ -85,7 +86,7 @@ header {
   margin-left: 35%;
   font-size: 19px;
   line-height: 26px;
-  width: 75%;
+
 }
 
 .article-img {
@@ -103,13 +104,12 @@ figcaption {
 
 .side-articles {
   position: relative;
-  align-self: center;
   grid-area: right;
-  margin-left: 60%;
+  margin-left: 40%;
   border-left: 1px solid rgba(0,0,0,0.2);
-  padding-left: 10px;
   text-align: left;
   height: 460px;
+  padding-left: 10px;
 }
 
 .aside-title {
@@ -125,7 +125,7 @@ p.aside-description  {
 
 aside img {
   width: 150px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 .theory-inflation {
@@ -190,7 +190,7 @@ aside img {
 
 .yt-video {
   display: inline-block;
-  margin-left: 23%;
+  margin-left: 17.5%; 
 }
 
 .article-inner-img {
@@ -212,6 +212,7 @@ footer {
   border-top: 3px solid rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
   padding: 10px 0 10px 0;
+  min-width: 800px;
   display: grid;
   grid-template: 
             "z z z z z z" 
@@ -260,5 +261,61 @@ footer {
   text-align: left;
   font-size: 14px;
   line-height: 25px;
-  min-width: 170px;
+}
+
+.more-articles-container {
+  width: 100%;
+  min-width: 1100px;
+}
+
+.more-articles {
+  display: grid;
+  grid-template: 
+            "a b c h"
+            "d e f h"
+            "g i j h";
+            
+}
+
+.more-articles img {
+  height: 160px;
+  width: 260px;
+}
+
+.more-articles-a {
+  grid-area: a;
+}
+
+.more-articles-b {
+  grid-area: b;
+}
+
+.more-articles-c {
+  grid-area: c;
+}
+
+.more-articles-d {
+  grid-area: d;
+}
+
+.more-articles-e {
+  grid-area: e;
+}
+
+.more-articles-f {
+  grid-area: f;
+}
+
+.more-articles-side {
+  grid-area: h;
+}
+
+.more-articles-item {
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.more-articles-side-item {
+  padding: 15px 5px;
+  border-top: 1px solid rgba(0,0,0,0.1);
 }
